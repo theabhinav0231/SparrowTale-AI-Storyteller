@@ -2,43 +2,28 @@
 streamlit~=1.30.0
 
 # --- LLM & LangChain Framework ---
-# Core LangChain libraries for orchestration, prompts, and parsing
 langchain~=0.2.0
 langchain-core~=0.2.0
 langchain-community~=0.2.0
-
-# LLM and Embedding model integrations
 langchain-google-genai~=1.0.0
 langchain-huggingface~=0.0.3
 sentence-transformers~=2.7.0
-
-# Vector Store for RAG
 faiss-cpu~=1.8.0
 
 # --- AI Model Providers ---
-# Direct SDKs for specific AI services
-google-generativeai~=0.5.0
-sarvamai~=0.1.19  # Fixed: Changed from 0.2.0 to latest available version
+google-genai>=0.2.0  # Changed from google-generativeai
+sarvamai~=0.1.19
 
 # --- Data Handling & Processing ---
-# Document loading
 pypdf~=4.2.0
-
-# NLP and Text Processing
 spacy~=3.7.4
 langdetect~=1.0.9
 pycountry~=23.12.11
-
-# Audio Processing
 librosa~=0.10.1
-
-# Image and Video Processing
 Pillow~=10.2.0
 opencv-python-headless~=4.9.0.80
 numpy~=1.26.4
-
-# --- Utilities ---
 python-dotenv~=1.0.1
 
-# spaCy model directly from its download URL
+# spaCy model
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz#egg=en_core_web_sm
