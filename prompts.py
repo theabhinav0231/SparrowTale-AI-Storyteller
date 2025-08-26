@@ -43,7 +43,7 @@ def get_story_prompt(user_prompt: str, story_style: str, target_language: str, r
     **Visual Imagery:** Paint scenes of misty forests with ancient oaks, crystalline lakes hiding mermaids, mountain peaks where gods dwell, enchanted castles shrouded in twilight, magical creatures with luminous eyes, and heroes wielding legendary weapons under starlit skies.
 
     **Structure:**
-    - **Length:** Exactly 200-250 words (perfect for 1-2 minute narration)
+    - **Length:** Exactly 130-160 words (perfect for 1 minute narration)
     - **Opening:** Begin with "Long ago, when magic still flowed freely through the world..."
     - **Arc:** Setup (hero's world) → Challenge (mystical trial) → Resolution (wisdom gained)
     - **Closing:** End with a universal truth or moral that resonates across cultures
@@ -74,7 +74,7 @@ def get_story_prompt(user_prompt: str, story_style: str, target_language: str, r
     **Visual Imagery:** Create vivid scenes resembling historical paintings, vintage photographs, or museum dioramas. Describe authentic period details: cobblestone streets, candlelit chambers, traditional crafts, historical battles, period costumes, and architectural marvels of the era.
 
     **Structure:**
-    - **Length:** Exactly 200-250 words (perfect for 1-2 minute narration)
+    - **Length:** Exactly 130-160 words (perfect for 1 minute narration)
     - **Opening:** Begin with a specific time and place: "In the year [X], in the ancient city of..."
     - **Arc:** Historical context → Human challenge → Historical impact/legacy
     - **Closing:** Connect the historical moment to its lasting significance
@@ -105,7 +105,7 @@ def get_story_prompt(user_prompt: str, story_style: str, target_language: str, r
     **Visual Imagery:** Design stunning futuristic scenes: gleaming megacities touching the clouds, starships traversing nebulae, holographic interfaces floating in the air, cybernetic beings with glowing circuitry, alien landscapes with impossible geometries, and technology seamlessly integrated into daily life.
 
     **Structure:**
-    - **Length:** Exactly 200-250 words (perfect for 1-2 minute narration)
+    - **Length:** Exactly 130-160 words (perfect for 1 minute narration)
     - **Opening:** Begin with "In the year 2157..." or "On the distant world of..." to establish the sci-fi setting
     - **Arc:** Future world introduction → Technological/philosophical challenge → Mind-expanding resolution
     - **Closing:** Leave the audience with a profound question or sense of awe about the future
@@ -143,7 +143,7 @@ def get_story_prompt(user_prompt: str, story_style: str, target_language: str, r
     **Visual Imagery:** Paint scenes of sacred ghats, meditation caves in Himalayas, ancient gurukulas, temple courtyards, sages under peepal trees, flowing rivers Ganga and Yamuna, lotus ponds, and celestial darshan of divine beings.
 
     **Narrative Structure:**
-    - **Length:** Exactly 200-250 words (perfect for 1-2 minute narration)
+    - **Length:** Exactly 130-160 words (perfect for 1 minute narration)
     - **Flow:** Begin with a timeless "Once upon a time in ancient Bharatvarsha..."
     - **Lesson Integration:** Seamlessly embed philosophical teachings within the story action
     - **Conclusion:** End with a profound Sanskrit shloka or wisdom quote that encapsulates the story's teaching
