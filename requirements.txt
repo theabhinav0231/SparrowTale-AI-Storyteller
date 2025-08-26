@@ -8,39 +8,37 @@ langchain-core~=0.2.0
 langchain-community~=0.2.0
 
 # LLM and Embedding model integrations
-langchain-google-genai~=1.0.0  # For Gemini model access via LangChain
-langchain-huggingface~=0.0.3   # For local HuggingFace embeddings
-sentence-transformers~=2.7.0  # Powers the HuggingFace embeddings
+langchain-google-genai~=1.0.0
+langchain-huggingface~=0.0.3
+sentence-transformers~=2.7.0
 
 # Vector Store for RAG
-faiss-cpu~=1.8.0  # For efficient in-memory similarity search
+faiss-cpu~=1.8.0
 
 # --- AI Model Providers ---
 # Direct SDKs for specific AI services
-google-generativeai~=0.5.0  # For Gemini image generation
-sarvamai~=0.2.0             # For Sarvam.ai TTS (Bulbul) and STT (Saarika)
+google-generativeai~=0.5.0
+sarvamai~=0.1.19  # Fixed: Changed from 0.2.0 to latest available version
 
 # --- Data Handling & Processing ---
 # Document loading
-pypdf~=4.2.0  # To load and parse PDF files for the RAG agent
+pypdf~=4.2.0
 
 # NLP and Text Processing
-spacy~=3.7.4              # For semantic sentence chunking in chunker.py
-langdetect~=1.0.9          # To detect the language of the user's text prompt
-pycountry~=23.12.11        # To convert language codes to full names
+spacy~=3.7.4
+langdetect~=1.0.9
+pycountry~=23.12.11
 
 # Audio Processing
-librosa~=0.10.1 # For calculating audio duration in the video creation process
+librosa~=0.10.1
 
 # Image and Video Processing
-Pillow~=10.2.0                   
+Pillow~=10.2.0
 opencv-python-headless~=4.9.0.80
-numpy~=1.26.4                    # A core dependency for numerical operations in CV and audio
+numpy~=1.26.4
 
 # --- Utilities ---
-python-dotenv~=1.0.1  # For loading environment variables from a .env file
-
-spacy~=3.7.4
+python-dotenv~=1.0.1
 
 # spaCy model directly from its download URL
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz#egg=en_core_web_sm
