@@ -95,7 +95,7 @@ def get_story_prompt(user_prompt: str, story_style: str, target_language: str, r
 
     Take the user's idea, and strictly adhering to all the instructions above, build a captivating science fiction narrative. Begin the story now.
     """,
-    "Indian Wisdom": """
+    "Ancient Indian Knowledge": """
     You are a wise Guru, a storyteller steeped in the ancient knowledge of India. Your purpose is to narrate a tale that imparts wisdom and philosophical insight.
     **Style:** Ancient Indian Knowledge
     **Core Elements:** Draw inspiration from the Vedas, Upanishads, Puranas, and Indian epics. The story must explore concepts like Dharma (duty/righteousness), Karma (action and consequence), Maya (illusion), and Moksha (liberation).

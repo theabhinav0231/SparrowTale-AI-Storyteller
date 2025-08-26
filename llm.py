@@ -81,8 +81,16 @@ def generate_story(user_prompt: str, story_style: str, audio_file_path: str = No
 
     # The rest of the pipeline proceeds as normal, with or without context.
     print("\n[Step 2/3] Engineering the final prompt...")
+    print(f"📋 Story style received: '{story_style}'")
     final_prompt = get_story_prompt(user_prompt, story_style, target_language, rag_context)
     print("✅ Prompt engineering complete.")
+
+        # Add this debug check
+    if final_prompt is None:
+        print(f"❌ ERROR: get_story_prompt returned None for style: '{story_style}'")
+        return f"Error: Invalid story style '{story_style}'. Please select a valid style."
+    
+    print(f"✅ Prompt engineering complete. Prompt length: {len(final_prompt)} characters")
 
     print("\n[Step 3/3] Calling the LLM to generate the story...")
     try:
@@ -90,10 +98,9 @@ def generate_story(user_prompt: str, story_style: str, audio_file_path: str = No
         story = response.content
         print("✅ Story generation complete.")
     except Exception as e:
-        print(f"An error occurred while calling the LLM: {e}")
-        story = "Error: Could not generate the story."
+        print(f"❌ An error occurred while calling the LLM: {e}")
+        story = f"Error: Could not generate the story. LLM Error: {str(e)}"
 
-    print("\n--- Story Generation Pipeline Finished ---")
     return story
 
 # if __name__ == '__main__':
