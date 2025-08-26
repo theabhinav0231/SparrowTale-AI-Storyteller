@@ -85,7 +85,7 @@ def generate_story(user_prompt: str, story_style: str, audio_file_path: str = No
     final_prompt = get_story_prompt(user_prompt, story_style, target_language, rag_context)
     print("✅ Prompt engineering complete.")
 
-        # Add this debug check
+    # Add this debug check
     if final_prompt is None:
         print(f"❌ ERROR: get_story_prompt returned None for style: '{story_style}'")
         return f"Error: Invalid story style '{story_style}'. Please select a valid style."
